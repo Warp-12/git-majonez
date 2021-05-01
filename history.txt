@@ -2,17 +2,17 @@
  2003  cd git-majonez/
  2004  git init
  2005  touch main.cpp
- 2006  vim main.cpp 
- 2007  g++ main.cpp 
- 2008  ./a.out 
+ 2006  vim main.cpp
+ 2007  g++ main.cpp
+ 2008  ./a.out
  2009  git status
- 2010  git add main.cpp 
+ 2010  git add main.cpp
  2011  git commit -m "Initial commit"
- 2012  vim main.cpp 
- 2013  g++ main.cpp 
- 2014  ./a.out 
+ 2012  vim main.cpp
+ 2013  g++ main.cpp
+ 2014  ./a.out
  2015  git status
- 2016  git add main.cpp 
+ 2016  git add main.cpp
  2017  git commit -m "Farewell changed"
  2018  git log
  2019  git status
@@ -28,9 +28,9 @@
  2029  git log
  2030  git reset --hard HEAD~
  2031  git log
- 2032  vim main.cpp 
+ 2032  vim main.cpp
  2033  git status
- 2034  git add main.cpp 
+ 2034  git add main.cpp
  2035  git commit -m "Greetings"
  2036  git log
  2037  git push origin cs
@@ -38,14 +38,14 @@
  2039  git checkout master
  2040  git branch
  2041  git merge cs
- 2042  vim main.cpp 
- 2043  g++ main.cpp 
+ 2042  vim main.cpp
+ 2043  g++ main.cpp
  2044  ./a.out
  2045  history
  2046  history | tail -n44 > history.txt
  2047  history | tail -n46 > history.txt
  2048  git status
- 2049  git add main.cpp history.txt 
+ 2049  git add main.cpp history.txt
  2050  git status
  2051  git commit -m "History added"
  2052  git log --graph --oneline
@@ -53,9 +53,9 @@
  2054  git reset --hard HEAD~
  2055  git log --graph --oneline
  2056  git merge cs
- 2057  vim main.cpp 
+ 2057  vim main.cpp
  2058  git status
- 2059  git add main.cpp 
+ 2059  git add main.cpp
  2060  git commit -m "Merge branch 'cs'"
  2061  git log --graph --oneline
  2062  history
