@@ -2,17 +2,17 @@
  2003  cd git-majonez/
  2004  git init
  2005  touch main.cpp
- 2006  vim main.cpp
- 2007  g++ main.cpp
- 2008  ./a.out
+ 2006  vim main.cpp 
+ 2007  g++ main.cpp 
+ 2008  ./a.out 
  2009  git status
- 2010  git add main.cpp
+ 2010  git add main.cpp 
  2011  git commit -m "Initial commit"
- 2012  vim main.cpp
- 2013  g++ main.cpp
- 2014  ./a.out
+ 2012  vim main.cpp 
+ 2013  g++ main.cpp 
+ 2014  ./a.out 
  2015  git status
- 2016  git add main.cpp
+ 2016  git add main.cpp 
  2017  git commit -m "Farewell changed"
  2018  git log
  2019  git status
@@ -28,9 +28,9 @@
  2029  git log
  2030  git reset --hard HEAD~
  2031  git log
- 2032  vim main.cpp
+ 2032  vim main.cpp 
  2033  git status
- 2034  git add main.cpp
+ 2034  git add main.cpp 
  2035  git commit -m "Greetings"
  2036  git log
  2037  git push origin cs
@@ -38,14 +38,14 @@
  2039  git checkout master
  2040  git branch
  2041  git merge cs
- 2042  vim main.cpp
- 2043  g++ main.cpp
+ 2042  vim main.cpp 
+ 2043  g++ main.cpp 
  2044  ./a.out
  2045  history
  2046  history | tail -n44 > history.txt
  2047  history | tail -n46 > history.txt
  2048  git status
- 2049  git add main.cpp history.txt
+ 2049  git add main.cpp history.txt 
  2050  git status
  2051  git commit -m "History added"
  2052  git log --graph --oneline
@@ -53,10 +53,50 @@
  2054  git reset --hard HEAD~
  2055  git log --graph --oneline
  2056  git merge cs
- 2057  vim main.cpp
+ 2057  vim main.cpp 
  2058  git status
- 2059  git add main.cpp
+ 2059  git add main.cpp 
  2060  git commit -m "Merge branch 'cs'"
  2061  git log --graph --oneline
  2062  history
  2063  history | tail -n62 > history.txt
+ 2064  git add history.txt 
+ 2065  git commit -m "History added"
+ 2066  git status
+ 2067  git log --graph --oneline
+ 2068  git push origin master
+ 2069  git fetch
+ 2070  git rebase master
+ 2071  git log
+ 2072  git log --graph --oneline
+ 2073  git push origin master
+ 2074  git fetch origin master:tmp
+ 2075  git rebase tmp
+ 2076  git branch
+ 2077  vim main.cpp 
+ 2078  git push origin HEAD:master
+ 2079  git branch -D tmp
+ 2080  git branch
+ 2081  git checkout master
+ 2082  vim history.txt 
+ 2083  git status
+ 2084  git log --oneline
+ 2085  git log --oneline --graph
+ 2086  git branch
+ 2087  git checkout master
+ 2088  vim history.txt 
+ 2089  git add history.txt 
+ 2090  git commit -m "Resolve problem with non fast forward"
+ 2091  git log --oneline --graph
+ 2092  git branch 
+ 2093  git checkout master
+ 2094  git branch
+ 2095  git pull origin master
+ 2096  vim history.txt 
+ 2097  git add history.txt 
+ 2098  git commit -m "Resolve conflict with FETCH_HEAD"
+ 2099  git log --oneline --graph
+ 2100  git branch
+ 2101  git status
+ 2102  history
+ 2103  history | tail -n102 > history.txt
